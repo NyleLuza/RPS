@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Rock Paper Scissors</h1>
+    </header>
+    <main class="main">
+      <div class="leftSection">
+        <div class="innerbox">
+          <h2 class="subheader">Choose your Fighter</h2>
+          <div class="selectionbox">
+            <button class="btn" id="rock">Rock</button>
+            <button class="btn" id="paper">Paper</button>
+            <button class="btn" id="scissors">Scissors</button>
+          </div>
+        </div>
+      </div>
+      <div class="rightSection">
+        <div class="firstColumn">
+          <div class="showcase">
+            <h3>Player Choice</h3>
+            <img id="paperImage" src="images/papers.png" class="hidden" />
+            <img id="rockImage" src="images/rock.png" class="hidden" />
+            <img id="scissorsImage" src="images/scissors.png" class="hidden" />
+          </div>
+          <div class="showcase">
+            <h3>Computer Choice</h3>
+            <img id="cpaperImage" src="compImages/papers.png" class="hidden" />
+            <img id="crockImage" src="compImages/rock.png" class="hidden" />
+            <img
+              id="cscissorsImage"
+              src="compImages/scissors.png"
+              class="hidden"
+            />
+          </div>
+        </div>
+        <div class="secondColumn">
+          <div class="head">
+            <h4>Player Score</h4>
+            <div id="playerScore"></div>
+          </div>
+          <div class="headw">
+            <div id="winner"></div>
+            <button id="restart" class="hidden">Restart Game</button>
+          </div>
+          <div class="head">
+            <h4>Computer Score</h4>
+            <div id="computerScore"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
